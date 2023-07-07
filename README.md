@@ -1,6 +1,7 @@
 # default-config-front
 
 ## чистый проект с настроеными конфигами для быстрой разработки приложений на React
+- module structure 
 - webpack
 - typescript
 - jest
