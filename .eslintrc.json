@@ -1,0 +1,49 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "airbnb",
+    "react-app",
+    "react-app/jest",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended"
+  ],
+  "rules": {
+    "react/jsx-pascal-case": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "no-prototype-builtins": "off",
+    "no-unused-vars": "warn",
+    "no-var": 2,
+    "semi": "error",
+    "prefer-const": "off",
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "no-multi-spaces": "error",
+    "space-in-parens": "error",
+    "no-multiple-empty-lines": "error",
+    "no-use-before-define": [
+      "warn",
+      {
+        "functions": false
+      }
+    ],
+    "no-undef": "warn",
+    "eol-last": "error",
+    "no-alert": "error",
+    "no-empty-function": "warn",
+    "no-debugger": "warn"
+  },
+  "globals": {
+    "__IS_DEV__": true
+  },
+}
