@@ -20,5 +20,10 @@
     "compilerOptions": {
       "module": "CommonJS"
     }
-  }
+  },
+  "exclude": [
+    "test.ts",
+    "test.tsx",
+    "**/*.spec.*"
+  ]
 }
