@@ -1,15 +1,16 @@
-import { Outlet } from "react-router-dom";
+import {Outlet} from "react-router-dom";
 import "./styles/index.scss";
-import { classNames } from "shared/lib/classNames/classNames";
-import { useTheme } from "app/providers/ThemeProvider";
-import { Suspense } from "react";
-import { Navbar } from "widgets/Navbar";
+import {classNames} from "shared/lib/classNames/classNames";
+import {useTheme} from "app/providers/ThemeProvider";
+import {Suspense} from "react";
+import {Navbar} from "widgets/Navbar";
 
-const App = () => {
-  const { theme, toggleTheme } = useTheme();
+function App() {
+  const {theme, toggleTheme} = useTheme();
 
   return (
     <div className={classNames("app", {}, [theme])}>
+      {/* eslint-disable-next-line react/button-has-type */}
       <button onClick={toggleTheme}>TOGGLE</button>
       <Navbar />
       <Suspense>
@@ -17,6 +18,6 @@ const App = () => {
       </Suspense>
     </div>
   );
-};
+}
 
 export default App;

@@ -1,7 +1,7 @@
 import style from "./NotFoundPage.module.scss";
 
-const NotFoundPage = () => {
+function NotFoundPage() {
   return <div className={style.wrapper}>Страница не найдена</div>;
-};
+}
 
-export {NotFoundPage};
+export { NotFoundPage };

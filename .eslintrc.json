@@ -9,9 +9,6 @@
     "@typescript-eslint"
   ],
   "extends": [
-    "airbnb",
-    "react-app",
-    "react-app/jest",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/eslint-recommended"
@@ -28,6 +25,15 @@
       "error",
       "double"
     ],
+    "func-names": "off",
+    "implicit-arrow-linebreak": "off",
+    "no-underscore-dangle": "off",
+    "import/prefer-default-export": "off",
+    "react/require-default-props": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "warn",
+    "react/function-component-definition": "off",
+    "import/no-unresolved": "off",
     "no-multi-spaces": "error",
     "space-in-parens": "error",
     "no-multiple-empty-lines": "error",
@@ -37,13 +43,26 @@
         "functions": false
       }
     ],
+    "import/extensions": "off",
     "no-undef": "warn",
     "eol-last": "error",
     "no-alert": "error",
     "no-empty-function": "warn",
-    "no-debugger": "warn"
+    "no-debugger": "warn",
+    "object-curly-spacing": "off",
+    "react/jsx-filename-extension": [
+      2,
+      {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".tsx"
+        ]
+      }
+    ],
+    "import/no-extraneous-dependencies": "off"
   },
   "globals": {
     "__IS_DEV__": true
-  },
+  }
 }

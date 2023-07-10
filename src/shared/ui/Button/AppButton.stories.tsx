@@ -1,15 +1,15 @@
 import React from "react";
-import {ComponentStory, ComponentMeta} from "@storybook/react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import {ThemeDecorator} from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
-import {Theme} from "app/providers/ThemeProvider";
+import { ThemeDecorator } from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
+import { Theme } from "app/providers/ThemeProvider";
 import AppButton from "./AppButton";
 
 export default {
   title: "shared/Button",
   component: AppButton,
   argTypes: {
-    backgroundColor: {control: "color"},
+    backgroundColor: { control: "color" },
   },
 } as ComponentMeta<typeof AppButton>;
 
