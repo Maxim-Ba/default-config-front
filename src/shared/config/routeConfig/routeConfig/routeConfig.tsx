@@ -1,14 +1,9 @@
-import { RouteObject } from "react-router-dom";
-import { AboutPage } from "pages/AboutPage";
+import {RouteObject} from "react-router-dom";
+import {AboutPage} from "pages/AboutPage";
 import App from "app/App";
-import { MainPage } from "pages/MainPage";
-import { NotFoundPage } from "pages/NotFoundPage";
-
-export const ROUTES = {
-  MAIN: "/",
-  ABOUT: "/about",
-  NOT_FOUND: "*",
-};
+import {MainPage} from "pages/MainPage";
+import {NotFoundPage} from "pages/NotFoundPage";
+import {ROUTES} from "../paths/paths";
 
 export const APP_ROUTES: RouteObject[] = [
   {
